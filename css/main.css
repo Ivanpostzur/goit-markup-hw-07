@@ -1277,8 +1277,8 @@ summary {
 }
 
 .projects__item {
-  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-      flex-basis: calc(33.3333333333% - 30px);
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
   background-color: var(--primary-bg-color);

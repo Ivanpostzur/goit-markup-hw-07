@@ -1,0 +1,12 @@
+.filter__container {
+  padding-bottom: 16px;
+}
+
+.filter {
+  @include centered-content;
+  flex-wrap: wrap;
+}
+
+.filter__item:not(:first-child) {
+  margin-left: 8px;
+}

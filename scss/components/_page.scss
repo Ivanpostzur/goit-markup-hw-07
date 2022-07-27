@@ -1,0 +1,31 @@
+.page {
+  font-family: var(--primary-font);
+
+  @include text-custom(400, 14px, 1.71, 0.03em, var(--primari-text-color));
+
+  background-color: var(--primary-bg-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  @include text-title(700,36px,1.17,center);
+ 
+}
+
+.section--undertone {
+  background-color: var(--second-bg-color);
+}

@@ -1,0 +1,88 @@
+.header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  display: flex;
+  flex-basis: 100%;
+
+  border-bottom: 1px solid #ececec;
+
+  background-color: var(--primary-bg-color);
+}
+
+.header__container,
+.navigation {
+  @include centered-Y-content;
+}
+
+.header__logo {
+  color: #000000;
+}
+
+.navigation__tabs {
+  display: flex;
+  margin-left: 93px;
+}
+
+.navigation__link {
+  color: var(--tittle-text-color);
+
+  &:hover,
+  &:focus {
+    @include acsent-color-fill;
+  }
+}
+
+.navigation__link,
+.contacts__link {
+  @include centered-Y-content;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+
+  @include f-size-height-spacing(14px, 1.14, 0.02em);
+
+  fill: var(--primari-text-color);
+
+  transition: color var(--shift), fill var(--shift);
+
+  &:hover,
+  &:focus {
+    @include acsent-color-fill;
+  }
+}
+
+.navigation__link--current {
+  position: relative;
+
+  color: var(--acsent-color);
+
+  &::after {
+    content: '';
+    display: block;
+    @include width-height(100%, 4px);
+
+    border-radius: 2px;
+    background-color: var(--acsent-color);
+
+    position: absolute;
+    bottom: -1px;
+  }
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.navigation__tab:not(:first-child),
+.contacts__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+}
