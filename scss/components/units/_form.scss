@@ -36,7 +36,6 @@
   transform: fill var(--shift), border-color var(--shift);
 
   &:focus,
-  .form-box:hover &,
   .form-box:focus & {
     outline-color: var(--acsent-color);
 
@@ -70,7 +69,6 @@
 
   fill: var(--tittle-text-color);
 
-  .form-box:hover &,
   .form-box:focus &,
   .form-box__input:focus + & {
     fill: var(--acsent-color);
