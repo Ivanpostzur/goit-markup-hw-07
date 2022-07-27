@@ -12,225 +12,216 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>
+<body class="page">
+    
     <!-- Шапка -->
-<header class="page-header">
-    <div class="header-container container">
-        <nav class="header-item site-nav">
-            <a href="./index.html" class="site-nav-item header-logo logo">
-                <span class="logo-part">Web</span>Studio
-            </a>
-
-            <ul class="site-nav-item nav-tabs list">
-                <li class="nav-tabs-item"><a href="./index.html" class="nav-tab link">Студия</a></li>
-                <li class="nav-tabs-item"><a href="./portfolio.html" class="nav-tab link  current">Портфолио</a></li>
-                <li class="nav-tabs-item"><a href="" class="nav-tab link">Контакты</a></li>
+    <header class="header">
+        <div class=" container header__container">
+            <nav class="navigation">
+                <a href="./index.html" class="navigation__item header__logo logo">
+                    <span class="logo__part">Web</span>Studio
+                </a>
+                <ul class="navigation__item navigation__tabs list">
+                    <li class="navigation__tab"><a href="./index.html" class="navigation__link link">Студия</a></li>
+                    <li class="navigation__tab"><a href="./portfolio.html"
+                            class="navigation__link link navigation__link--current">Портфолио</a></li>
+                    <li class="navigation__tab"><a href="" class="navigation__link link">Контакты</a></li>
+                </ul>
+            
+            </nav>
+            
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a href="mailto:" class="contacts__link link">
+                        <svg class="contacts__icon" width=16 height=12>
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+            
+                <li class="contacts__item">
+                    <a href="tel:" class="contacts__link link">
+                        <svg class="contacts__icon" width=10 height=16>
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
             </ul>
-
-        </nav>
-
-        <ul class="header-item auth-nav list">
-            <li class="auth-nav-item">
-                <a href="mailto:" class="nav-auth link">
-                    <svg class="auth-icon-box " width=16 height=12>
-                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li class="auth-nav-item">
-                <a href="tel:" class="nav-auth link">
-                    <svg class="auth-icon-box" width=10 height=16>
-                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
-    </div>
-</header>
+        </div>
+    </header>
 
     <main>
         <section class="section">
             <!-- Фільтр -->
-            <div class="filter-container container">
+            <div class="filter__container container">
                 <ul class="filter list">
-                    <li class="filter-item"><button type="button" class="filter-button current">Все</button></li>
-                    <li class="filter-item"><button type="button" class="filter-button">Веб-сайты</button></li>
-                    <li class="filter-item"><button type="button" class="filter-button">Приложения</button></li>
-                    <li class="filter-item"><button type="button" class="filter-button">Дизайн</button></li>
-                    <li class="filter-item"><button type="button" class="filter-button">Маркетинг</button></li>
+                    <li class="filter__item"><button type="button" class="filter-button button filter-button--current">Все</button></li>
+                    <li class="filter__item"><button type="button" class="filter-button button">Веб-сайты</button></li>
+                    <li class="filter__item"><button type="button" class="filter-button button">Приложения</button></li>
+                    <li class="filter__item"><button type="button" class="filter-button button">Дизайн</button></li>
+                    <li class="filter__item"><button type="button" class="filter-button button">Маркетинг</button></li>
                 </ul>
             </div>
             <!-- Наші проекти -->
-            <div class="project-container container">
-                <h1 hidden class="section-title">Наши проекты</h1>
+            <div class="projects__container container">
+                <h1 hidden class="section__title ">Наши проекты</h1>
 
-                <ul class="project-list list">
-                    <li class="project-item">
-                        <a href="" class="project-card link">
-                            <div class="project-image">
-                                <img src="./images/technocrack.jpg" class="project-card-image image"
-                                    alt="макбукпро с изображением карточек трех людей" width="370">
-                                <p class="project-image-overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                                    используют эту платформу для цифрового
-                                    шпионажа и атак на защищённые сервера конкурентов.
-                                </p>
-                            </div>
-                                                       
-                            <div class="project-card-content">
-                                <h2 class="project-card-title">Технокряк</h2>
-                                <p class="project-card-type">Веб-сайт</p>
-                            </div>
-                        </a>
+                <ul class="projects list">
+                    <li class="projects__item">
+                        <article class="project">
+                            <a href="#" class="project__card link">
+                                <div class="project__image-box">
+                                    <img src="./images/technocrack.jpg" class="image" alt="макбукпро с изображением карточек трех людей"
+                                        width="370">
+                                    <p class="project__overlay text">Технокряк это современная площадка распространения коронавируса.
+                                        Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                                <div class="project__content text">
+                                    <h2 class="project__title text">Технокряк</h2>
+                                    <p class="project__type text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
                     
-                    <li class="project-item">
-                        <a href="" class="project-card link">
-                            <div class="project-image">
-                                <img src="./images/new-orlean-vs-golden-star.jpg" class="project-card-image image"
-                                    alt="баскетболист в прыжке пытается забрать мячь у другого баскетболиста" width="370">
-                                <p class="project-image-overlay">
-                                    – Потерял мяч – возвращайся в защиту!
-                                    <br>
-                                    Баскетболист:
-                                    <br>
-                                    – Возвращаться –
-                                    плохая примета!
-                                </p>
-                            </div>
-                            
-                            <div class="project-card-content">
-                                <h2 class="project-card-title">Постер New Orlean vs Golden Star</h2>
-                                <p class="project-card-type">Дизайн</p>
-                            </div>
-                        </a>
+                    <li class="projects__item">
+                        <article class="project">
+                            <a href="#" class="project__card link">
+                                <div class="project__image-box">
+                                    <img src="./images/new-orlean-vs-golden-star.jpg" class="project-card-image image"
+                                        alt="баскетболист в прыжке пытается забрать мячь у другого баскетболиста" width="370">
+                                    <p class="project__overlay text">
+                                        – Потерял мяч – возвращайся в защиту ! 
+                                        <br>Баскетболист: 
+                                        <br>– Возвращаться – плохая примета !
+                                    </p>
+                                </div>
+                                <div class="project__content text">
+                                    <h2 class="project__title text">Постер New Orlean vs Golden Star</h2>
+                                    <p class="project__type text">Дизайн</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
 
-                    <li class="project-item">
-                        <a href="" class="project-card link">
-                            <div class="project-image">
-                                <img src="./images/seafood.jpg" class="project-card-image image"
-                                    alt="логотип магазина сифуд на фоне выпрыгнувше из воды форели" width="370">
-                            
-                                <p class="project-image-overlay">
-                                    Seafood - вот рыба была раньше — в воду без трусов не зайдешь!
-                                </p>
-                            </div>
-                            
-                            <div class="project-card-content">
-                                <h2 class="project-card-title">Ресторан Seafood</h2>
-                                <p class="project-card-type">Приложение</p>
-                            </div>
-
-                        </a>
+                    <li class="projects__item">
+                        <article class="project">
+                            <a href="#" class="project__card link">
+                                <div class="project__image-box">
+                                    <img src="./images/seafood.jpg" class="project-card-image image"
+                                        alt="логотип магазина сифуд на фоне выпрыгнувше из воды форели" width="370">
+                                    <p class="project__overlay text">Ресторан Seafood
+                                    </p>
+                                </div>
+                                <div class="project__content">
+                                    <h2 class="project__title text">Ресторан Seafood</h2>
+                                    <p class="project__type text">Приложение</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
 
-                    <li class="project-item">
-                        <a href="" class="project-card link">
-                            <div class="project-image">
-                                <img src="./images/prime.jpg" class="project-card-image image" alt="черные блютузнаушники" width="370">
-                            
-                                <p class="project-image-overlay">
-                                    Проект Prime
-                                </p>
-                            </div>
-                            
-                            <div class="project-card-content">
-                                <h2 class="project-card-title">Проект Prime</h2>
-                                <p class="project-card-type">Маркетинг</p>
-                            </div>
-                        </a>
+                    <li class="projects__item">
+                        <article class="project">
+                            <a href="#" class="project__card link">
+                                <div class="project__image-box">
+                                    <img src="./images/prime.jpg" class="project-card-image image" alt="черные блютузнаушники" width="370">
+                                    <p class="project__overlay text">Проект Prime
+                                    </p>
+                                </div>
+                                <div class="project__content">
+                                    <h2 class="project__title text">Проект Prime</h2>
+                                    <p class="project__type text">Маркетинг</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
 
-                    <li class="project-item">
-                        <a href="" class="project-card link">
-                            <div class="project-image">
-                                <img src="./images/boxes.jpg" class="project-card-image image"
-                                    alt="две коробки белая и коричневая в изометрической проекции" width="370">
-                            
-                                <p class="project-image-overlay">
-                                    Проект Boxes
-                                </p>
-                            </div>
-
-                            <div class="project-card-content">
-                                <h2 class="project-card-title">Проект Boxes</h2>
-                                <p class="project-card-type">Приложение</p>
-                            </div>
-                        </a>
+                    <li class="projects__item">
+                        <article class="project">
+                            <a href="#" class="project__card link">
+                                <div class="project__image-box">
+                                    <img src="./images/boxes.jpg" class="project-card-image image"
+                                        alt="две коробки белая и коричневая в изометрической проекции" width="370">
+                                    <p class="project__overlay text">Проект Boxes</p>
+                                </div>
+                                <div class="project__content">
+                                    <h2 class="project__title text">Проект Boxes</h2>
+                                    <p class="project__type text">Приложение</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
 
-                    <li class="project-item">
-                        <a href="" class="project-card link">
-                            <div class="project-image">
-                                <img src="./images/inspiration-has-no-borders.jpg" class="project-card-image image"
-                                    alt="черный монитор с изображением страницы сайта" width="370">
-                            
-                                <p class="project-image-overlay">
-                                    Inspiration has no Borders
-                                </p>
-                            </div>
-                            
-                            <div class="project-card-content">
-                                <h2 class="project-card-title">Inspiration has no Borders</h2>
-                                <p class="project-card-type">Веб-сайт</p>
-                            </div>
-                        </a>
+                    <li class="projects__item">
+                        <article class="project">
+                            <a href="#" class="project__card link">
+                                <div class="project__image-box">
+                                    <img src="./images/inspiration-has-no-borders.jpg" class="project-card-image image"
+                                        alt="черный монитор с изображением страницы сайта" width="370">
+                                    <p class="project__overlay text">Inspiration has no Borders</p>
+                                </div>
+                                <div class="project__content">
+                                    <h2 class="project__title text">Inspiration has no Borders</h2>
+                                    <p class="project__type text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
 
-                    <li class="project-item">
-                        <a href="" class="project-card link">
-                            <div class="project-image">
-                                <img src="./images/limited-edition.jpg" class="project-card-image image" alt="разворот книги" width="370">
-                            
-                                <p class="project-image-overlay">
-                                    Издание Limited Edition
-                                </p>
-                            </div>
-
-                            <div class="project-card-content">
-                                <h2 class="project-card-title">Издание Limited Edition</h2>
-                                <p class="project-card-type">Дизайн</p>
-                            </div>
-                        </a>
+                    <li class="projects__item">
+                        <article class="project">
+                            <a href="#" class="project__card link">
+                                <div class="project__image-box">
+                                    <img src="./images/limited-edition.jpg" class="project-card-image image" alt="разворот книги"
+                                        width="370">
+                                    <p class="project__overlay text">Издание Limited Edition</p>
+                                </div>
+                                <div class="project__content">
+                                    <h2 class="project__title text">Издание Limited Edition</h2>
+                                    <p class="project__type text">Дизайн</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
 
-                    <li class="project-item">
-                        <a href="" class="project-card link">
-                            <div class="project-image">
-                                <img src="./images/lab.jpg" class="project-card-image image" alt="белая бирка с надписью лаб ел таг" width="370">
-                            
-                                <p class="project-image-overlay">
-                                    Проект LAB
-                                </p>
-                            </div>
-
-                            <div class="project-card-content">
-                                <h2 class="project-card-title">Проект LAB</h2>
-                                <p class="project-card-type">Маркетинг</p>
-                            </div>
-                        </a>
+                    <li class="projects__item">
+                        <article class="project">
+                            <a href="#" class="project__card link">
+                                <div class="project__image-box">
+                                    <img src="./images/lab.jpg" class="project-card-image image" alt="белая бирка с надписью лаб ел таг"
+                                        width="370">
+                                    <p class="project__overlay text">Проект LAB</p>
+                                </div>
+                                <div class="project__content">
+                                    <h2 class="project__title text">Проект LAB</h2>
+                                    <p class="project__type text">Маркетинг</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
 
-                    <li class="project-item">
-                        <a href="" class="project-card link">
-                            <div class="project-image">
-                                <img src="./images/growing-business.jpg" class="project-card-image image" alt="мужские руки печатающие на ноутбуке"
-                                    width="370">
-                            
-                                <p class="project-image-overlay">
-                                    Growing Business
-                                </p>
-                            </div>
-                            
-                            <div class="project-card-content">
-                                <h2 class="project-card-title">Growing Business</h2>
-                                <p class="project-card-type">Приложение</p>
-                            </div>
-                        </a>
+                    <li class="projects__item">
+                        <article class="project">
+                            <a href="#" class="project__card link">
+                                <div class="project__image-box">
+                                    <img src="./images/growing-business.jpg" class="project-card-image image"
+                                        alt="мужские руки печатающие на ноутбуке" width="370">
+                                    <p class="project__overlay text">Growing Business</p>
+                                </div>
+                                <div class="project__content">
+                                    <h2 class="project__title text">Growing Business</h2>
+                                    <p class="project__type text">Приложение</p>
+                                </div>
+                            </a>
+                        </article>
                     </li>
                 </ul>
             </div>
@@ -238,71 +229,72 @@
     </main>
     <!-- Підвал -->
     <footer class="footer">
-        <div class="container footer-containers">
-            <div class="footer-address">
-                <a href="./" class="footer-logo logo">
-                    <span class="logo-part">Web</span>Studio
+        <div class="container footer__container">
+            <div class="footer__address">
+                <a href="./" class="footer__logo logo">
+                    <span class="logo__part">Web</span>Studio
                 </a>
                 <address class="address">
                     г. Киев, пр-т Леси Украинки, 26
     
-                    <ul class="address-list list">
-                        <li class="address-item"><a href="mailto:" class="footer-auth link">info@devstudio.com</a></li>
-                        <li class="address-item"><a href="tel:" class="footer-auth link">+38 096 111 11 11</a></li>
+                    <ul class="address__list list">
+                        <li class="address__item"><a href="mailto:" class="address__linc link">info@devstudio.com</a></li>
+                        <li class="address__item"><a href="tel:" class="address__linc link">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
     
-            <div class="footer-links">
-                <p class="title-linc text">присоединяйтесь</p>
+            <div class="footer__social-links">
+                <b class="footer__title text">присоединяйтесь</b>
     
                 <ul class="social-links list">
-                    <li class="social-link-item">
-                        <a href="" class="social-link social-link-footer link">
-                            <svg class="icon-box-social">
+                    <li class="social-links__item">
+                        <a href="#" class="social-link footer__social-link link link" aria-label="инстаграм">
+                            <svg class="social-link__icon">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-link-item">
-                        <a href="" class="social-link social-link-footer link">
-                            <svg class="icon-box-social">
+                    <li class="social-links__item">
+                        <a href="#" class="social-link footer__social-link link" aria-label="твиттер">
+                            <svg class="social-link__icon">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-link-item">
-                        <a href="" class="social-link social-link-footer link">
-                            <svg class="icon-box-social">
+                    <li class="social-links__item">
+                        <a href="#" class="social-link footer__social-link link" aria-label="фейсбук">
+                            <svg class="social-link__icon">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-link-item">
-                        <a href="" class="social-link social-link-footer link">
-                            <svg class="icon-box-social">
+                    <li class="social-links__item">
+                        <a href="#" class="social-link footer__social-link link" aria-label="линкедин">
+                            <svg class="social-link__icon">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-
-            <div class="footer-subscribe">
-                <b class="subscribe-title text">Подпишитесь на рассылку</b>
-                <form action="#" class="subscribe-form">
-                    <label class="subscribe-box">
-                        <input type="text" class="subscribe-input" name="mail" placeholder="&nbsp;" required>
-                        <span class="subscribe-name">E-mail</span>
+    
+            <div class="footer__subscribe">
+                <b class="footer__title text">Подпишитесь на рассылку</b>
+                <form action="#" class="subscribe">
+                    <label class="subscribe__box">
+                        <input type="text" class="subscribe__input" name="mail" placeholder="&nbsp;" required>
+                        <span class="subscribe__name">E-mail</span>
                     </label>
-                    <button type="submit" class="modal-button subscribe-button">
+                    <button type="submit" class="home-button button">
                         Подписаться
-                        <svg class="button-icon">
+                        <svg class="home-button__icon home-button__icon--end">
                             <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
             </div>
+    
         </div>
     
     
@@ -310,7 +302,7 @@
 
     <script>
         const { height: pageHeaderHeight } = document
-            .querySelector(".page-header")
+            .querySelector(".header")
             .getBoundingClientRect();
 
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
