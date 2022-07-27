@@ -1,0 +1,53 @@
+// міксини блоку
+
+@mixin centered-Y-content {
+    // флекс з центруванням контенту по вертикалі
+    display: flex;
+    align-items: center;
+}
+
+@mixin centered-content {
+    // флекс з центруванням контенту посередині
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin centered-content-width-height($width, $height) {
+    // флекс з центруванням контенту посередині p hjpvshfvb
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $width;
+    height: $height;
+}
+
+@mixin block-width-height($width, $height) {
+    // блок + розміри блоку
+    display: block;
+    width: $width;
+    height: $height;
+}
+
+@mixin width-height($width, $height) {
+    // розміри блоку
+
+    width: $width;
+    height: $height;
+}
+
+@mixin square($side) {
+    display: block;
+    width: $side;
+    height: $side;
+}
+
+@mixin square-size($side) {
+    width: $side;
+    height: $side;
+}

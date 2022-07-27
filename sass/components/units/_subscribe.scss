@@ -1,0 +1,51 @@
+.subscribe {
+    display: flex;
+    width: 570px;
+}
+
+.subscribe__box {
+    position: relative;
+    display: block;
+    @include width-height(358px, 50px);
+
+    margin-right: 12px;
+}
+
+.subscribe__input {
+    @include square(100%);
+    padding-left: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    color: var(--second-acsent-color);
+
+    background-color: var(--third-bg-color);
+
+    transition: outline var(--shift);
+
+    .subscribe__box:hover & {
+        outline: 1px solid;
+    }
+}
+
+.subscribe__name {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+
+    display: block;
+
+    @include f-size-height(16px, 1.25);
+
+    color: var(--second-acsent-color-transparent);
+
+    transition: transform var(--shift);
+
+    .subscribe__input:focus+& {
+        transform: translate(calc(-100% - 32px), -50%);
+    }
+}

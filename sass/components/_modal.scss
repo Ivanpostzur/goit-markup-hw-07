@@ -1,0 +1,53 @@
+.backdrop {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+
+    transition: opacity var(--shift);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+    z-index: 20;
+    position: absolute;
+    padding: 40px;
+
+    top: 50%;
+    left: 50%;
+    @include width-height(528px, 581px);
+    transform: translate(-50%, -50%) scale(1);
+
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    opacity: 1;
+
+    transition: transform var(--shift), opacity var(--shift);
+}
+
+.modal__close-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.modal__home-button {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
